@@ -1,0 +1,372 @@
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Projets</h2>
+    <p>
+      Explorez mes projets personnels pour découvrir les interfaces développées
+      et obtenir plus d'informations sur les solutions que j'ai conçues et
+      réalisées .
+    </p>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container">
+    <div
+      class="isotope-layout"
+      data-default-filter="*"
+      data-layout="masonry"
+      data-sort="original-order"
+    >
+        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li (click)="filterItems('*')" [class.filter-active]="selectedFilter === '*'">All</li>
+        <li (click)="filterItems('filter-istichara')" [class.filter-active]="selectedFilter === 'filter-istichara'">ISTICHARA</li>
+        <li (click)="filterItems('filter-dessalement')" [class.filter-active]="selectedFilter === 'filter-dessalement'">DESSALEMENT</li>
+        <li (click)="filterItems('filter-resume')" [class.filter-active]="selectedFilter === 'filter-resume'">RESUME BUILDER</li>
+        <li (click)="filterItems('filter-petshop')" [class.filter-active]="selectedFilter === 'filter-petshop'">PETSHOP</li>
+      </ul>
+      <!-- End Portfolio Filters -->
+
+      <div
+        class="row gy-4 isotope-container"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-istichara" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-istichara'}">
+          <img src="../../assets/acceuil.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>ISTICHARA</h4>
+            <p>Acceuil</p>
+            <a routerLink="/details-istichara" title="Détails" class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-istichara" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-istichara'}">
+          <img src="../../assets/0.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>ISTICHARA</h4>
+            <p>Dashboard admin</p>
+
+            <a routerLink="/details-istichara" title="Détails" class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-istichara" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-istichara'}">
+          <img src="../../assets/33.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>ISTICHARA</h4>
+            <p>Verification des consultations</p>
+            <a routerLink="/details-istichara" title="Détails" class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-istichara" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-istichara'}">
+          <img
+            src="../../assets/screencapture-localhost-4200-utilisateur-profilConsultant-utilisateur-5I13P-ODU7E7-GO-2024-07-05-11_07_18.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>ISTICHARA</h4>
+            <p>Profil consultant</p>
+            <a
+             routerLink="/details-istichara"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-istichara" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-istichara'}">          <img
+            src="../../assets/screencapture-localhost-4200-consultant-sidentifier-consultant-2024-06-21-16_40_30.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>ISTICHARA</h4>
+            <p>Identification</p>
+            <a
+            routerLink="/details-istichara"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-istichara" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-istichara'}">          <img
+            src="../../assets/screencapture-localhost-4200-utilisateur-domaine-utilisateur-2024-07-05-11_06_58.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>ISTICHARA</h4>
+            <p>Domaines</p>
+            <a
+              routerLink="/details-istichara"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+                              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-resume" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-resume'}">
+          <img src="../../assets/Desktop - 1.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>RESUME BUILDER</h4>
+            <p>Acceuil</p>
+            <a
+              routerLink="/details-resume"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+                                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-resume" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-resume'}">
+
+          <img src="../../assets/Login.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>RESUME BUILDER</h4>
+            <p>Sign in</p>
+            <a
+          routerLink="/details-resume"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+                              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-resume" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-resume'}">
+
+          <img src="../../assets/Sign up.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>RESUME BUILDER</h4>
+            <p>Sing up</p>
+            <a
+              routerLink="/details-resume"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petshop" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-petshop'}">
+          <img
+            src="../../assets/screencapture-localhost-4200-client-acceuil-client-2024-08-02-12_29_33.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>PETSHOP</h4>
+            <p>Acceuil</p>
+
+            <a
+             routerLink="/details-petshop"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+                             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petshop" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-petshop'}">
+
+          <img
+            src="../../assets/screencapture-localhost-4200-client-categories-client-2024-08-02-12_30_01.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>PETSHOP</h4>
+            <p>Catégories</p>
+            <a
+             routerLink="/details-petshop"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petshop" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-petshop'}">
+
+          <img
+            src="../../assets/screencapture-localhost-4200-client-contact-client-2024-08-02-12_30_25.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>PETSHOP</h4>
+            <p>Contact</p>
+            <a
+             routerLink="/details-petshop"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petshop" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-petshop'}">
+          <img
+            src="../../assets/screencapture-localhost-4200-client-details-achat-client-14-Chats-2024-08-02-12_33_40.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>PETSHOP</h4>
+            <p>Achat infos</p>
+            <a
+            routerLink="/details-petshop"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+                            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petshop" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-petshop'}">
+
+          <img
+            src="../../assets/screencapture-localhost-4200-client-card-client-2024-08-02-12_33_54.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>PETSHOP</h4>
+            <p>Pannier</p>
+            <a
+            routerLink="/details-petshop"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petshop" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-petshop'}">
+
+          <img
+            src="../../assets/screencapture-localhost-4200-client-specials-client-2024-08-02-12_30_17.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>PETSHOP</h4>
+            <p>Spécials</p>
+            <a
+             routerLink="/details-petshop"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- End Portfolio Item -->
+     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-istichara" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-istichara'}">          <img src="../../assets/5.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>ISTICHARA</h4>
+            <p>Chat</p>
+            <a
+               routerLink="/details-istichara"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-istichara" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-istichara'}">          <img src="../../assets/22.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>ISTICHARA</h4>
+            <p>Liste des réclamations</p>
+            <a
+             routerLink="/details-istichara"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-istichara" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-istichara'}">          <img src="../../assets/4.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>ISTICHARA</h4>
+            <p>Paiement</p>
+            <a
+              routerLink="/details-istichara"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dessalement" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-dessalement'}">
+          <img src="../../assets/screencapture-localhost-4200-2024-06-10-21_45_11.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>DESSALEMENT</h4>
+            <p>Dashboard</p>
+            <a
+              routerLink="/details-dessalement"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dessalement" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-dessalement'}">
+          <img src="../../assets/screencapture-localhost-4200-2024-05-28-17_46_31.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>DESSALEMENT</h4>
+            <p>Identification</p>
+            <a
+              routerLink="/details-dessalement"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dessalement" [ngClass]="{'d-none': selectedFilter !== '*' && selectedFilter !== 'filter-dessalement'}">
+          <img src="../../assets/screencapture-localhost-4200-facture-list-2024-05-18-16_15_50.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>DESSALEMENT</h4>
+            <p>Liste factures</p>
+            <a
+              routerLink="/details-dessalement"
+              title="Détails"
+              class="details-link"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+      </div>
+      <!-- End Portfolio Container -->
+    </div>
+  </div>
+</section>
+<!-- /Portfolio Section -->

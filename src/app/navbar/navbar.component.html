@@ -1,0 +1,51 @@
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect" />
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+<body class="index-page"  (window:scroll)="onScroll($event)">
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li>
+          <a href="#home" class="active" [ngClass]="{'active': currentSection === 'home'}"
+            ><i class="bi bi-house navicon"></i><span>Home</span></a
+          >
+        </li>
+        <li>
+          <a href="#about" [ngClass]="{'active': currentSection === 'about'}"
+            ><i class="bi bi-person navicon"></i><span>A propos</span></a
+          >
+        </li>
+        <li>
+          <a href="#resume" [ngClass]="{'active': currentSection === 'resume'}"
+            ><i class="bi bi-file-earmark-text navicon"></i
+            ><span>CV</span></a
+          >
+        </li>
+        <li>
+          <a href="#portfolio" [ngClass]="{'active': currentSection === 'portfolio'}"
+            ><i class="bi bi-images navicon"></i><span>Projets</span></a
+          >
+        </li>
+        <li>
+          <a href="#services" [ngClass]="{'active': currentSection === 'services'}"
+            ><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a
+          >
+        </li>
+        <li>
+          <a href="#contact" [ngClass]="{'active': currentSection === 'contact'}"
+            ><i class="bi bi-envelope navicon"></i><span>Contact</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+</body>
