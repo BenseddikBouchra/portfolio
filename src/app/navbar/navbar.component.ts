@@ -26,3 +26,4 @@ export class NavbarComponent implements OnInit {
     this.currentSection = current;
   }
 }
+
