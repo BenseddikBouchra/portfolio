@@ -92,6 +92,11 @@ width: 27%;
   object-fit: cover;
   z-index: 1;
 }
+@media (max-width: 1200px) {
+  .hero img {
+    display: none;
+  }
+}
 
 .hero:before {
   content: "";
